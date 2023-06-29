@@ -1,9 +1,9 @@
 cask "aws-sam-cli" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.89.0"
-  sha256 intel: "1b48745a8b7f15ee6c2119619e9f10ce215eaecb3e49e73b9e420056890ef9e1",
-         arm: "2ed4e2bc28e254ee106e7642aa987573961516a2fef737f43b82c2674c44036e"
+  version "1.88.0"
+  sha256 intel: "faed03a7d38bbeaf90b9373fbc5a616902e5644d55cec32f4a37dcba4319aed4",
+         arm: "70a5583160398391cdf0dd5d946448bc36c078d72465ac7c095ad1f56190c707"
   url "https://github.com/aws/aws-sam-cli/releases/download/v#{version}/aws-sam-cli-macos-#{arch}.pkg",
       verified: "github.com/aws/aws-sam-cli"
 
