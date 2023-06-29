@@ -14,5 +14,10 @@ cask "aws-sam-cli" do
   auto_updates true
   pkg "aws-sam-cli-macos-#{arch}.pkg"
 
+  livecheck do
+    url :url
+    regex(/^v?\.?(\d+(?:\.\d+)+)$/i)
+  end
+
   uninstall pkgutil: "com.amazon.aws.sam.cli"
 end
