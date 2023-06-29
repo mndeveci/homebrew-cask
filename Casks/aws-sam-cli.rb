@@ -12,7 +12,7 @@ cask "aws-sam-cli" do
   homepage "https://github.com/aws/aws-sam-cli/"
 
   auto_updates true
-  pkg "aws-sam-cli-macos-x86_64.pkg"
+  pkg "aws-sam-cli-macos-#{arch}.pkg"
 
   uninstall pkgutil: "com.amazon.aws.sam.cli"
 end
